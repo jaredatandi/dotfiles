@@ -110,7 +110,7 @@ endfunction
 function ToggleMovementByDisplayLines()
     if !exists('b:movement_by_display_lines')
         let b:movement_by_display_lines = 0
-    endif
+   endif
     if b:movement_by_display_lines
         let b:movement_by_display_lines = 0
         silent! nunmap <buffer> k

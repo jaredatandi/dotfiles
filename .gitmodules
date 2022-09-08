@@ -1,5 +1,5 @@
 [submodule "dotbot"]
-	path = .dotbot
+	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 [submodule "vim/bundle/vim-colors-solarized"]
@@ -250,3 +250,6 @@
 [submodule "emacs.d/vendor/pos-tip"]
 	path = emacs.d/vendor/pos-tip
 	url = https://github.com/pitkali/pos-tip
+[submodule "Vundle.vim"]
+	path = Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
