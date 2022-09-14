@@ -3,7 +3,6 @@ set nocompatible " not vi compatible
 "------------------
 " Syntax and indent
 "------------------
-syntax on " turn on syntax highlighting
 set showmatch " show matching braces when text indicator is over them
 
 " highlight current line, but only in active window
@@ -36,8 +35,9 @@ else
     highlight CursorLineNr cterm=NONE
 endif
 
-filetype plugin indent on " enable file type detection
 set autoindent
+set smartindent
+set cindent
 
 "---------------------
 " Basic editing config
@@ -59,18 +59,12 @@ set autochdir " automatically set current directory to directory of last opened 
 set hidden " allow auto-hiding of edited buffers
 set history=8192 " more history
 set nojoinspaces " suppress inserting two spaces between sentences
-" use 4 spaces instead of tabs during formatting
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
 " smart case-sensitive search
 set ignorecase
 set smartcase
 " tab completion for files/bufferss
 set wildmode=longest,list
 set wildmenu
-set mouse+=a " enable mouse mode (scrolling, selection, etc)
 if &term =~ '^screen'
     " tmux knows the extended mouse mode
     set ttymouse=xterm2

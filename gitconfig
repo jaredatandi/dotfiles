@@ -105,6 +105,8 @@
 
 [user]
 	useConfigOnly = true
+	email = jaredatandi07@gmail.com
+	name = jaredatandi
 
 [http]
 	cookieFile = ~/.gitcookies

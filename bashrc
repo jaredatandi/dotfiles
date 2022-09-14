@@ -6,10 +6,6 @@ if [ -f ~/.shell_local_before ]; then
     source ~/.shell_local_before
 fi
 
-# Allow local customizations in the ~/.bashrc_local_before file
-if [ -f ~/.bashrc_local_before ]; then
-    source ~/.bashrc_local_before
-fi
 
 # Settings
 source ~/.bash/settings.bash
