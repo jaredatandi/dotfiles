@@ -4,7 +4,6 @@
 *.dll
 *.exe
 *.o
-*.so
 *.pyc
 
 # Editing tools and IDEs #
